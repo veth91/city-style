@@ -2,6 +2,10 @@ body {
 	margin-top: 20px;
 	margin-bottom: -10px;
 }
+p span {
+	text-decoration: bold;
+	font-size: 1.3em;
+}
 .navbar {
     position: relative;
     background-color: white;
@@ -9,7 +13,7 @@ body {
     margin-bottom: 80px;
 }
 .dropdown-menu {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	text-align: center;
 }
 .navbar-brand {
@@ -80,4 +84,24 @@ h2 {
 	padding-top: 40%;
 	margin-top: 0;
 	font-size: 2em;
+}
+
+.btn-lg {
+	margin: 5px 5px 5px 0px;
+}
+.facebook:hover {
+	background-color: #3b5998;
+	color: white;
+}
+.instagram:hover {
+	background-color: #fb3958;
+	color: white;
+}
+.twitter:hover {
+	background-color: #00aced;
+	color: white;
+}
+.pinterest:hover {
+	background-color: #C92228;
+	color: white;
 }
