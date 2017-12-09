@@ -41,17 +41,18 @@ p span {
 	color: white;
 }
 hr {
-	border-top: 25px solid #910002;
-	margin-top: 10px;
+	border-top: 15px solid #910002;
+	/*margin-top: 10px;*/
 }
 h2 {
-	margin: 110px 0px -45px 40px;
+	margin: 110px 0px -45px 10%;
 	/*margin-bottom: -34px;
 	margin-left: 40px;*/
 	font-family: 'Clicker Script', cursive;
-	font-size: 6em;
+	font-size: 10vmax;
 	color: black;
 }
+ 
 #footer {
 	background: #910002;
 	min-height: 200px;
