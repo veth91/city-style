@@ -4,7 +4,8 @@
 	<title>City Style | Bags, Shoes & Accesories</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Clicker+Script|Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Clicker+Script|Josefin+Sans" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="HandheldFriendly" content="true">
@@ -89,23 +90,23 @@
 		</div>
 	</div>
 	<div class="container" id="ourStory">
-		<h2>Our Story</h2><hr>
+		<h2 class="hideme">Our Story</h2><hr>
 		<div class="row">
 		<div class="col-sm-6 col-xs-12">
 			<div class="col-xs-6"> 
-				<div class="thumbnail"><img src="images/carrie1.png"></div>
+				<div class="thumbnail hideme"><img src="images/carrie1.png"></div>
 			</div>
 			<div class="col-xs-6"> 
-				<div class="thumbnail"><img src="images/shoes.png"></div>
+				<div class="thumbnail hideme"><img src="images/shoes.png"></div>
 			</div>
 			<div class="col-xs-6"> 
-				<div class="thumbnail"><img src="images/detroit.png"></div>
+				<div class="thumbnail hideme"><img src="images/detroit.png"></div>
 			</div>
 			<div class="col-xs-6"> 
-				<div class="thumbnail"><img src="images/berkley.png"></div>
+				<div class="thumbnail hideme"><img src="images/berkley.png"></div>
 			</div>
 		</div>	
-			<div class="col-lg-6 col-md-6">
+			<div class="col-lg-6 col-md-6 hideme">
 				<p>We are Tim & Carrie Vestrand, owners of City Style, and we welcome you to our little chic boutique in Berkley, Michigan. Berkley has a fantastic, quaint downtown, but we thought it needed a little bit of fashion. With Tim's background and mad skills in construction and Carrie's shoe and handbag addiction, a boutique seemed like the perfect when deciding to open a business.</p>
  				<p>After looking for the perfect location, we landed in a vacant building at 3017 W. 12 Mile Road that used to house an old dry cleaners. Our close friends chipped in with their time and talent, helping us open in February 2007, making our dreams a reality.</p>
  				<p>City Style was quickly embraced by our loyal customers who are just as excited about fabulous shoes, handbags, and accessories as we are. We see ourselves as a Mom & Pop shop that caters to our customer's footwear and style needs. Customers like you are the heart of our business, so we always take into consideration customer requests and suggestions. It's truly a family and friends affair at City Style and we look forward to many more years of serving your shoe and accessory needs.</p>
@@ -254,6 +255,27 @@ $("[rel='tooltip']").tooltip();
             $(this).find('.caption').slideUp(250); //.fadeOut(205)
         }
     );
+
+// fade images in effect
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
 });
 </script>
 </body>

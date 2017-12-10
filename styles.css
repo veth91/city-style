@@ -16,6 +16,7 @@ p span {
 .dropdown-menu {
 	font-size: 1.1em;
 	text-align: center;
+	border: none;
 }
 .navbar-brand {
     position: absolute;
@@ -29,6 +30,8 @@ p span {
 	color: black;
 	font-size: 1.5em;
 	font-family: 'Josefin Sans', sans-serif;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+
 }
 .navbar-toggle {
 	background-color: rgba(145, 0, 2, .95); 
@@ -48,11 +51,13 @@ h2 {
 	margin: 110px 0px -45px 10%;
 	/*margin-bottom: -34px;
 	margin-left: 40px;*/
-	font-family: 'Clicker Script', cursive;
+	font-family: 'Clicker Script', Helvetica, sans-serif;
 	font-size: 10vmax;
 	color: black;
+	text-shadow: 4px 4px 2px rgba(0,0,0,0.1);
+	rotate:;
 }
- 
+
 #footer {
 	background: #910002;
 	min-height: 200px;
@@ -63,13 +68,17 @@ h2 {
   display: block;
   width: 100%;
   height: auto;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
 
 }
 .thumbnail {
 	border: none;
+	padding: none;
+	margin: none;
 	position:relative;
     overflow:hidden;
     border-radius: 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 .caption {
     position: absolute;
@@ -89,6 +98,16 @@ h2 {
 	font-size: 3em;
 	font-family: 'Clicker Script', cursive;
 }
+
+/*Fade in effect*/
+.hideme
+{
+    opacity:0;
+}
+
+
+
+
 
 .btn-lg {
 	margin: 5px 5px 5px 0px;
