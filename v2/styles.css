@@ -58,10 +58,6 @@ p span {
 .icon-bar {
 	background-color: white;
 }
-.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-    max-height: 475px;
-    
-}
 .nav>li>a:focus, .nav>li>a:hover {
 	background-color: rgba(145, 0, 2, .8);
 	border-radius: 0.1em;
