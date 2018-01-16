@@ -11,188 +11,327 @@
 	<meta name="HandheldFriendly" content="true">
 </head>
 <body>
-<div id="header"> </div>
-<div class="container">
-	<nav class="navbar navbar-fixed-top">
-		<div class="container" id="navContainer">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-	     		 </button>
-				<a href="#" class="navbar-brand">
-					<img class="img-responsive" alt="Logo" src="images/CityStyleLogo1.jpg">
-				</a>
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div id="navContainer">
+		<div id="header"> </div>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+     		 </button>
+			<a href="#" id="largeLogo" class="navbar-brand hidden-sm hidden-xs">
+				<img class="img-responsive" alt="Logo" src="images/logos/CityStyleLogo1.jpg">
+			</a>
+			<a href="#" id="smallLogo" class="navbar-brand visible-sm visible-xs">
+				<img class="img-responsive" alt="Logo" src="images/logos/CityStyleLogo2.png">
+			</a>
 
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="nav navbar-nav myNavbar">
+				<li><a href="#ourStory">About</a></li>
+				<li><a href="#contactUs">Contact us</a></li>	
 			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<div class="nav navbar-nav" id="myNavbar">
-					<li><a href="#ourStory">About</a></li>
-					<li><a href="#contactUs">Contact us</a></li>	
-				</div>
-				<div class="nav navbar-nav navbar-right">
-					<li><a href="#">Address</a></li>
-					 <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hours<span class="caret"></span></a>
-			         <ul class="dropdown-menu">
-				           <li>
-				           		<p class="hours"><span>Monday-Friday</span> <br>11AM - 7PM<br><br><span>Saturday</span><br>11AM - 6PM<br><br><span>Sunday</span> - Closed</p>
-				           </li>
-			        </ul>
-			        </li>
-				</div>
+			<div class="nav navbar-nav navbar-right myNavbar">
+				<li><a href="#contactUs">Address</a></li>
+				 <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hours<span class="caret"></span></a>
+		         <ul class="dropdown-menu">
+			           <li>
+			           		<p class="hours"><span>Monday-Friday</span> <br>11AM - 7PM<br><br><span>Saturday</span><br>11AM - 6PM<br><br><span>Sunday</span> - Closed</p>
+			           </li>
+		        </ul>
+		        </li>
 			</div>
 		</div>
-	</nav>
+	</div>
+</nav>
+<div class="container">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-xs-12">
+			<div class="col-md-6 col-sm-12">
 				<div><img src="images/model.png" class="image"></div>
 			</div>
-			<div class="col-sm-6 col-xs-12" id="images">
+			<div class="col-sm-6 col-xs-12 hidden-xs hidden-sm" id="images">
 				<div class="col-xs-6"> 
 					<div class="thumbnail">
-						<a class="wordLinks" href="#purses">
-						<div class="thumbTitles">
-							Handbags
-						</div>
+						<a href="#purses">
+							<div class="thumbTitles">
+								Handbags
+							</div>
 						</a>
-						<img src="images/handbag.png">
+						<img src="images/handbags/handbag.png">
 					</div>
 				</div>
 				<div class="col-xs-6"> 
 					<div class="thumbnail">
 						<a href="#shoes">
-						<div class="thumbTitles">
-							Shoes
-						</div>
+							<div class="thumbTitles">
+								Shoes
+							</div>
 						</a>
-						<img src="images/shoes2.png">
+						<img src="images/shoes/shoes2.png">
 					</div>
 				</div>
 				<div class="col-xs-6"> 
 					<div class="thumbnail">
 						<a href="#accesories">
-						<div class="thumbTitles">
-							Accessories
-						</div>
+							<div class="thumbTitles">
+								Accessories
+							</div>
 						</a>
-						<img src="images/accesories.png">
+						<img src="images/accessories/accesories.png">
 					</div>
 				</div>
 				<div class="col-xs-6"> 
 					<div class="thumbnail">
 						<a href="#ourStory">
-						<div class="thumbTitles">
-							Our Story
-						</div>
+							<div class="thumbTitles">
+								Our Story
+							</div>
 						</a>
-						<img src="images/carrie1.png">
+						<img src="images/aboutus/style.png">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+<!-- ======================================= -->
+<!--			 About Us                    -->
+<!-- ======================================= -->
 	<div class="container" id="ourStory">
-		<h2 class="hideme">Our Story</h2><hr>
+		<h2>Our Story</h2><hr>
 		<div class="row">
-		<div class="col-sm-6 col-xs-12">
-			<div class="col-xs-6"> 
-				<div class="thumbnail hideme"><img src="images/carrie1.png"></div>
-			</div>
-			<div class="col-xs-6"> 
-				<div class="thumbnail hideme"><img src="images/shoes.png"></div>
-			</div>
-			<div class="col-xs-6"> 
-				<div class="thumbnail hideme"><img src="images/detroit.png"></div>
-			</div>
-			<div class="col-xs-6"> 
-				<div class="thumbnail hideme"><img src="images/berkley.png"></div>
-			</div>
-		</div>	
-			<div class="col-lg-6 col-md-6 hideme">
-				<p>We are Tim & Carrie Vestrand, owners of City Style, and we welcome you to our little chic boutique in Berkley, Michigan. Berkley has a fantastic, quaint downtown, but we thought it needed a little bit of fashion. With Tim's background and mad skills in construction and Carrie's shoe and handbag addiction, a boutique seemed like the perfect when deciding to open a business.</p>
- 				<p>After looking for the perfect location, we landed in a vacant building at 3017 W. 12 Mile Road that used to house an old dry cleaners. Our close friends chipped in with their time and talent, helping us open in February 2007, making our dreams a reality.</p>
- 				<p>City Style was quickly embraced by our loyal customers who are just as excited about fabulous shoes, handbags, and accessories as we are. We see ourselves as a Mom & Pop shop that caters to our customer's footwear and style needs. Customers like you are the heart of our business, so we always take into consideration customer requests and suggestions. It's truly a family and friends affair at City Style and we look forward to many more years of serving your shoe and accessory needs.</p>
+			<div class="col-sm-6 col-xs-12">
+				<div class="col-sm-12 col-md-6"> 
+					<div class="thumbnail"><img src="images/aboutus/carrie1.png"></div>
+				</div>
+				<div class="col-sm-12 col-md-6"> 
+					<div class="thumbnail"><img src="images/aboutus/shoes.png"></div>
+				</div>
+				<div class="col-sm-12 col-md-6 hideme"> 
+					<div class="thumbnail"><img src="images/aboutus/carrieandtim.png"></div>
+				</div>
+				<div class="col-xs-6 hideme hidden-sm hidden-xs"> 
+					<div class="thumbnail"><img src="images/aboutus/berkley.png"></div>
+				</div>
+				<div class="col-xs-6 hideme hidden-sm hidden-xs"> 
+					<div class="thumbnail"><img src="images/aboutus/CS 001.png"></div>
+				</div>
+				<div class="col-xs-6 hideme hidden-sm hidden-xs"> 
+					<div class="thumbnail"><img src="images/aboutus/style.png"></div>
+				</div>
+			</div>	
+			<div class="col-lg-6 col-md-6 ourStory">
+				<p class="hideme">
+					Welcome to my little <span class="highlight">chic boutique</span>.
+				</p>
+				<p class="hideme">
+					I am Carrie Vestrand, fashionista/shoe aficionado, and along with my husband, Tim, I opened City Style in 2007. 
+				</p>
+				<p class="hideme">
+					I spent my childhood summers in Detroit, and grew to love all the city had to offer — especially in terms of fashion. The comradery of the city, with the gorgeous old buildings and urban landscapes, created a rich sense of style that stayed hot even in the midst of winter. Style became my hobby, my passion (okay, obsession) and I decided I wanted to share that with the world.
+				</p> 
+				<p class="hideme">
+					With Tim’s carpentry skills and my expertise with purses, handbags and accessories the idea of City Style became a reality.  We decided on Berkley — because, while it has a fantastic, quaint downtown, we thought it needed a little bit of fashion.
+				</p> 
+				<p class="hideme">	
+					Now, ten years later we’re still that burst of fashion in a growing city: a Mom & Pop shop that caters to our customer’s footwear and style needs. 
+				</p>
+				<p class="hideme">
+					Need an outfit to ring in your 50th birthday? How about a killer pair of heels for that board meeting? I am excited to work with you until you satisfy your inner fashionista. 
+				</p>
 			</div>
 		</div>
 	</div>	
+<!-- ======================================= -->
+<!--			 HANDBAGS                    -->
+<!-- ======================================= -->
 	<div class="container" id="purses">
-		<h2>Handbags</h2><hr>
+		<h2 class="hideme">Handbags</h2><hr>
 		<div class="row">
-			<div class="col-lg-6 col-md-6">
-				<img src="">
-				<p>We are Tim & Carrie Vestrand, owners of City Style, and we welcome you to our little chic boutique in Berkley, Michigan. Berkley has a fantastic, quaint downtown, but we thought it needed a little bit of fashion. With Tim's background and mad skills in construction and Carrie's shoe and handbag addiction, a boutique seemed like the perfect when deciding to open a business.</p>
- 				<p>After looking for the perfect location, we landed in a vacant building at 3017 W. 12 Mile Road that used to house an old dry cleaners. Our close friends chipped in with their time and talent, helping us open in February 2007, making our dreams a reality.</p>
- 				<p>City Style was quickly embraced by our loyal customers who are just as excited about fabulous shoes, handbags, and accessories as we are. We see ourselves as a Mom & Pop shop that caters to our customer's footwear and style needs. Customers like you are the heart of our business, so we always take into consideration customer requests and suggestions. It's truly a family and friends affair at City Style and we look forward to many more years of serving your shoe and accessory needs.</p>
+			<div class="col-sm-6 col-xs-12 hideme">
+				<p>
+					Purses &#8212 not diamonds &#8212 are a girl’s best friend.	
+				</p>
+				<p>
+					Find the perfect bag for the season, <span class="highlight">your style</span> and, most importantly, <span class="highlight">your personality</span>.
+				</p>
+				<p>
+					I always keep a wide selection of handbags, large and small, funky and simple.
+				</p>
+				<p>
+					Brands include…
+				</p>
 			</div>
-				<div class="col-md-6 col-sm-12 col-xs-12">
-			<div class="col-md-6 col-sm-3 col-xs-6"> 
-				<div class="thumbnail"><img src="images/handbag.png"></div>
+			<div class="col-sm-6 col-xs-12 hideme">
+				<div class="col-sm-6"> 
+					<div class="thumbnail hidden-sm hidden-xs">
+						<img src="images/handbags/handbag.png">
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12"> 
+					<div class="thumbnail">
+						<img src="images/handbags/leather.png">
+					</div>
+				</div>
+				<div class="col-sm-6"> 
+					<div class="thumbnail hidden-sm hidden-xs">
+						<img src="images/handbags/canvas.png">
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12"> 
+					<div class="thumbnail">
+						<img src="images/handbags/purseOutfit.png">
+					</div>
+				</div>
 			</div>
-			<div class="col-md-6 col-sm-3 col-xs-6"> 
-				<div class="thumbnail"><img src="images/shoes2.png"></div>
-			</div>
-			<div class="col-md-6 col-sm-3 col-xs-6"> 
-				<div class="thumbnail"><img src="images/accesories.png"></div>
-			</div>
-			<div class="col-md-6 col-sm-3 col-xs-6"> 
-				<div class="thumbnail"><img src="images/style.png"></div>
-			</div>
-		</div>	
 		</div>
 	</div>	
 
+<!-- ======================================= -->
+<!--			 Shoes                    -->
+<!-- ======================================= -->
 	<div class="container" id="shoes">
-		<h2>Shoes</h2><hr>
-		<p>We are Tim & Carrie Vestrand, owners of City Style, and we welcome you to our little chic boutique in Berkley, Michigan. Berkley has a fantastic, quaint downtown, but we thought it needed a little bit of fashion. With Tim's background and mad skills in construction and Carrie's shoe and handbag addiction, a boutique seemed like the perfect when deciding to open a business.</p>
-		<p>After looking for the perfect location, we landed in a vacant building at 3017 W. 12 Mile Road that used to house an old dry cleaners. Our close friends chipped in with their time and talent, helping us open in February 2007, making our dreams a reality.</p>
-		<p>City Style was quickly embraced by our loyal customers who are just as excited about fabulous shoes, handbags, and accessories as we are. We see ourselves as a Mom & Pop shop that caters to our customer's footwear and style needs. Customers like you are the heart of our business, so we always take into 	consideration customer requests and suggestions. It's truly a family and friends affair at City Style and we look forward to many more years of serving your shoe and accessory needs.</p>
-	</div>
-	<div class="container" id="accesories">
-		<h2>Accessories</h2><hr>
-		<p>We are Tim & Carrie Vestrand, owners of City Style, and we welcome you to our little chic boutique in Berkley, Michigan. Berkley has a fantastic, quaint downtown, but we thought it needed a little bit of fashion. With Tim's background and mad skills in construction and Carrie's shoe and handbag addiction, a boutique seemed like the perfect when deciding to open a business.</p>
-		<p>After looking for the perfect location, we landed in a vacant building at 3017 W. 12 Mile Road that used to house an old dry cleaners. Our close friends chipped in with their time and talent, helping us open in February 2007, making our dreams a reality.</p>
-		<p>City Style was quickly embraced by our loyal customers who are just as excited about fabulous shoes, handbags, and accessories as we are. We see ourselves as a Mom & Pop shop that caters to our customer's footwear and style needs. Customers like you are the heart of our business, so we always take into 	consideration customer requests and suggestions. It's truly a family and friends affair at City Style and we look forward to many more years of serving your shoe and accessory needs.</p>
-	</div>
-	<div class="container" id="contactUs">
-		<h2>Contact Us</h2><hr>
+		<h2 class="hideme">Shoes</h2><hr>
 		<div class="row">
-			<div class="col-sm-6">
-				<h3>Address</h3>
-				<p><a href="https://www.google.com/maps/place/3017+Twelve+Mile+Rd,+Berkley,+MI+48072/@42.5029213,-83.1918287,17z/data=!3m1!4b1!4m5!3m4!1s0x8824c89ef825212f:0x7dc89c7976a61203!8m2!3d42.5029174!4d-83.18964">3017 W. 12 Mile Rd.<br>Berkley, MI 48072</a></p>
-				<h3>Phone</h3>
-				<p>(248)-548-CITY (2489)</p>
-				<h3>Fax</h3>
-				<p>(248) 548-2480</p>
-				<h3>Email</h3>
-				<p><a href="mailto:cvestrand@comcast.net">cvestrand@comcast.net</a></p>
-				<h3>Hours</h3>
-				<p>Monday-Friday 11AM - 7PM<br> Saturday 11AM - 6PM <br>Sunday - Closed</p>
+			<div class="col-sm-6 col-xs-12">
+				<div class="col-xs-6 hidden-xs hidden-sm">
+					<div class="thumbnail">
+						<img src="images/shoes/heels.png">
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="images/shoes/loafers.png">
+					</div>
+				</div>
+				<div class="col-xs-6 hidden-xs hidden-sm">
+					<div class="thumbnail">
+						<img src="images/shoes/tallBoots.png">
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="images/shoes/bootsModel.png">
+					</div>
+				</div>
 			</div>
-			<div class="col-sm-6">
-				<h3>Follow Us!</h3>
-				<div class= "col-xs-12">
-					<a href="https://facebook.com" class="btn btn-default btn-lg facebook" role="button"><span class="fa fa-facebook-official" 	aria-hidden="true"></span> Facebook</a>
+			<div class="col-sm-6 col-xs-12 hideme">
+				<p>
+					From boots to booties, wedges to sandals, I’ve curated the <span class="highlight">best selection</span> of shoes the Motor City has ever seen. As a shoe addict myself I stay on top of emerging trends (2018 sky-high heels are back... for better or worse). 
+				</p>
+ 				<p>
+ 					Come into my store and together we can find your next favorite pair of shoes. Try them on, walk around and feel like the fashionista you are!
+ 				</p>
+ 				<p>
+ 					Shoe brands include...
+ 				</p>
+			</div>
+		</div>	
+	</div>
+	
+<!-- ===================================================== -->
+					<!-- Accessories -->
+<!-- ===================================================== -->
+	<div class="container" id="accesories">
+		<h2 class="hideme">Accessories</h2><hr>
+		<div class="row">
+			<div class="col-sm-6 col-xs-12 hideme">
+				<p>
+					Accessories make an outfit.
+				</p>
+ 				<p>
+					Go from “rut” to <span class="highlight">“runway”</span> with a statement necklace, or gorgeous studs, and from "boring" to <span class="highlight">"bold"</span> with a pair of humorous socks (My favorite’s have a Rosie the Riveter pattern). 
+				</p>
+				<p>
+					With my expertise and your personality we can curate the perfect wardrobe, accessories and all, to elevate your style to Detroit standards.  
+				</p>
+			</div>
+			<div class="col-sm-6 col-xs-12 hideme">
+				<div class="col-md-6 col-xs-12"> 
+					<div class="thumbnail">
+						<img src="images/accessories/outfit1.png">
+					</div>
 				</div>
-				<div class= col-xs-12>
-					<a href="https://www.instagram.com/citystyleinc/" class="btn btn-default btn-lg instagram" role="button"><span class="fa fa-instagram" 	aria-hidden="true"></span> Instagram</a>
+				<div class="col-md-6 col-xs-12"> 
+					<div class="thumbnail">
+						<img src="images/accessories/stripedShirt.png">
+					</div>
 				</div>
-				<div class= col-xs-12>
-					<a href="https://twitter.com/citystyleinc" class="btn btn-default btn-lg twitter" role="button"><span class="fa fa-twitter" 	aria-hidden="true"></span> Twitter</a>
+				<div class="col-xs-6 hidden-sm hidden-xs"> 
+					<div class="thumbnail">
+						<img src="images/accessories/accesories.png">
+					</div>
 				</div>
-				<div class= col-xs-12>
-					<a href="https://www.pinterest.com/carrievestrand/" class="btn btn-default btn-lg pinterest" role="button"><span class="fa fa-pinterest" 	aria-hidden="true"></span> Pinterest</a>
+				<div class="col-xs-6 hidden-sm hidden-xs"> 
+					<div class="thumbnail">
+						<img src="images/accessories/ties.png">
+					</div>
 				</div>
-				
+			</div>
 		</div>
 	</div>
-	<div id="footer">
-		<h1>Footer goes here</h1>
+<!-- ===================================================== -->
+					<!-- Contact Us -->
+<!-- ===================================================== -->
+	<div class="container hideme" id="contactUs">
+		<h2>Contact Us</h2><hr id=contactUsHr>
+		<div class="container">
+			<div class="col-sm-2"></div>
+			<div class="container">
+				<div class="col-sm-8">
+					<div class= "col-sm-3 col-xs-12">
+						<a href="https://facebook.com" class="btn btn-default btn-lg facebook" role="button"><span class="fa fa-facebook-official" 	aria-hidden="true"></span> Facebook</a>
+					</div>
+					<div class= "col-sm-3 col-xs-12">
+						<a href="https://www.instagram.com/citystyleinc/" class="btn btn-default btn-lg instagram" role="button"><span class="fa fa-instagram" 	aria-hidden="true"></span> Instagram</a>
+					</div>
+					<div class= "col-sm-3 col-xs-12">
+						<a href="https://twitter.com/citystyleinc" class="btn btn-default btn-lg twitter" role="button"><span class="fa fa-twitter" 	aria-hidden="true"></span> Twitter</a>
+					</div>
+					<div class= "col-sm-3 col-xs-12">
+						<a href="https://www.pinterest.com/carrievestrand/" class="btn btn-default btn-lg pinterest" role="button"><span class="fa fa-pinterest" 	aria-hidden="true"></span> Pinterest</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2"></div>		
+		</div>
+		<div class="row contactInfo">
+			<div class= "col-sm-3 col-xs-6">
+					<h3>Address</h3>
+					<p>
+						<a href="https://www.google.com/maps/place/3017+Twelve+Mile+Rd,+Berkley,+MI+48072/@42.5029213,-83.1918287,17z/data=!3m1!4b1!4m5!3m4!1s0x8824c89ef825212f:0x7dc89c7976a61203!8m2!3d42.5029174!4d-83.18964">3017 W. 12 Mile Rd.<br>Berkley, MI 48072</a>
+					</p>
+				</div>
+				<div class= "col-sm-3 col-xs-6">
+					<h3>Phone</h3>
+					<p>(248)-548-CITY (2489)</p>
+					<h3>Fax</h3>
+					<p>(248) 548-2480</p>
+				</div>
+				<div class= "col-sm-3 col-xs-6">
+					<h3>Email</h3>
+					<p><a href="mailto:cvestrand@comcast.net">cvestrand@comcast.net</a></p>
+				</div>
+				<div class= "col-sm-3 col-xs-6">
+					<h3>Hours</h3>
+					<p>Monday-Friday 11AM - 7PM<br> Saturday 11AM - 6PM <br>Sunday - Closed</p>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			<p class="copyright">
+				© Copyright 2018 City Style Inc. All rights reserved. All materials presented on this website are protected by copyright.
+			</p>
+		</div>
 	</div>
 </div>
+
+<div id="footer"></div>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="scripts.js"></script>

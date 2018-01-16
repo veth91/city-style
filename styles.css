@@ -1,28 +1,88 @@
 body {
-	margin-top: 0px;
+	margin-top: 170px;
 	margin-bottom: -10px;
 	font-family: 'Raleway', sans-serif;
+	font-size: 200%;
 }
-p span {
+a {
+	text-decoration: none;
+	color: black;
+}
+p {	
+	margin: 10px 10px 20px 10px;
+	line-height: 150%;
+	font-size: 120%;
+}
+.highlight {
 	text-decoration: bold;
-	font-size: 1.3em;
+	font-size: 150%;
+	font-family: 'Covered By Your Grace', cursive;
 }
+.ourStory {
+	font-size: 90%;
+}
+
+/*=========================== Nav Bar */
+
 #navContainer {
-	background: white;
-	/*height: 200px;*/
-	/*margin: 0;*/
+	background: transparent;
 }
-.navbar {
-    position: relative;
-    /*background: transparent;*/
-  /*  border-color: black;*/
+.navbar-default {
+    /*position: relative;*/
     margin: 0px 0px 90px 0px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.85)
+}
+.navbar-header {
+	padding-bottom: 50px;
 }
 .dropdown-menu {
-	font-size: 1.1em;
-	text-align: center;
 	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 70%;
+	text-align: left;
+	margin: 10px;
 }
+
+.navbar-default .navbar-nav>li>a {
+	color: black;
+	font-size: 120%;
+	/*margin: 30px 0px 20px 0px;*/
+	font-family: 'Raleway', sans-serif;
+}
+.navbar-right {
+	/*margin-right: 40px;*/
+	/*padding-right: 40px;*/
+}
+/*.myNavbar {
+	margin-left: 40px;
+}*/
+.navbar-default .navbar-toggle {
+	background-color: rgba(145, 0, 2, .95); 
+	color: white;
+}
+.icon-bar {
+	background-color: white;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 700px;
+ 	border: none;
+ 	padding: 40px 80px 10px 80px;
+}
+.navbar-default .navbar-nav>.active>a {
+	background-color: rgba(145, 0, 2, .8);
+	color: white;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: rgba(145, 0, 2, .8);
+	border-radius: 0.1em;
+	color: white;
+}
+/*.wordLinks:hover, .wordLinks:active, .wordLinks:focus {
+	text-decoration: none;
+	color: white;
+}*/
+/*======================================= logo*/
 .navbar-brand {
     position: absolute;
     left: 50%;
@@ -33,73 +93,54 @@ p span {
     padding: 0;
 
 }
+#smallLogo {
+	max-width: 160px;
+	margin-left: 80px
+}
+#largeLogo {
+	max-width: 180px;
+}
 .navbar-brand>img {
-	max-width: 175px;
+	max-width: 180px;
 	margin-top: -30px; 
 	background-color: black;
-    padding: 15px 10px;
+    padding: 15px 20px;
     border-radius: 0em 0em 1.5em 1.5em;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 
 
-.navbar-nav>li>a {
-	color: black;
-	font-size: 30px;
-	/*margin-top: 45px;*/
-	margin: 30px 30px 0px 0px;
-	font-family: 'Raleway', sans-serif;
-	/*text-shadow: 0px 1px 1px rgba(0,0,0,0.2);*/
 
-}
-.navbar-toggle {
-	background-color: rgba(145, 0, 2, .95); 
-}
-.icon-bar {
-	background-color: white;
-}
-.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-    max-height: 475px;
-    
-}
-.nav>li>a:focus, .nav>li>a:hover {
-	background-color: rgba(145, 0, 2, .8);
-	border-radius: 0.1em;
-	color: white;
+/*==============================Script section titles*/
+h2 {
+	margin: 110px 0px -25px 10%;
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 400%;
+	color: black;
+	text-shadow: 4px 4px 2px rgba(0,0,0,0.1);
+	z-index: 1000;
 }
 hr {
 	border-top: 5px solid #910002;
 	margin-top: 0;
+	margin-bottom: 50px;
 }
-a {
-	text-decoration: none;
-	color: black;
-}
-.wordLinks:hover, .wordLinks:active, .wordLinks:focus {
-	text-decoration: none;
-	color: white;
-}
-h2 {
-	margin: 110px 0px -25px 10%;
-	font-family: 'Covered By Your Grace', cursive;
-	font-size: 8vmax;
-	color: black;
-	text-shadow: 4px 4px 2px rgba(0,0,0,0.1);
-}
+/*============================================*/
 
 #footer {
-	background: #910002;
-	min-height: 200px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-#header {
 	background: #910002;
 	min-height: 10px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-	z-index: -1;
-
+}
+#header {
+	/*position: fixed;*/
+	background: #910002;
+	min-height: 10px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 10000;
+/*=====================Images*/
 }
 .image {
   display: block;
@@ -112,13 +153,16 @@ h2 {
 .thumbnail {
 	border: none;
 	padding: 0;
-	margin: none;
-	position:relative;
-    overflow:hidden;
+	margin: 10px;
+	position: relative;
+    overflow: hidden;
     border-radius: 0;
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    /*box-shadow: 0 6px 12px rgba(0,0,0,.175);*/
+    float: left;
+    max-width: 300px;
 }
 
+/*=====================Red navigation squares*/
 .thumbTitles {
 	position: absolute;
     top: 0;
@@ -130,10 +174,11 @@ h2 {
     color:#fff !important;
     padding-top: 40%;
 	margin-top: 0;
-	font-size: 45px;
+	font-size: 200%;
 	z-index: 3;
 	font-family: 'Covered By Your Grace', cursive;
 }
+
 
 .thumbTitles:hover {
 	background: #910002;
@@ -147,13 +192,31 @@ h2 {
 {
     opacity:0;
 }
+.contactInfo p {
+	font-size: 80%;
+	text-align: left;
+	margin-left: 0;
+}
+.contactInfo h3 {
+	text-decoration: underline;
+}
+.contactInfo {
+	padding: 50px 0px;
+}
+.copyright {
+	font-size: 60%;
+	text-align: center;
+}
 
-
-
-
-
+/*=======================Social media buttons*/
+#contactUsHr {
+	margin-bottom: 70px;
+}
 .btn-lg {
-	margin: 5px 5px 5px 0px;
+	width: 130px;
+	margin: 0px;
+	display: inline;
+	float: left
 }
 .facebook:hover {
 	background-color: #3b5998;
