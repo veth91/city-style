@@ -129,9 +129,9 @@ hr {
 
 #footer {
 	background: #910002;
-	min-height: 10px;
+	min-height: 100px;
 	margin-bottom: 0px;
-	padding-bottom: 0px;
+	padding-bottom: 50px;
 }
 #header {
 	/*position: fixed;*/

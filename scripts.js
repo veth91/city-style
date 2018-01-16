@@ -65,7 +65,8 @@ $(document).ready(function(){
     // );
 
 // fade images in effect
-    $(window).scroll( function(){
+if ( $(window).width() > 768) {      
+  $(window).scroll( function(){
     
         /* Check the location of each desired element */
         $('.hideme').each( function(i){
@@ -83,5 +84,16 @@ $(document).ready(function(){
         }); 
     
     });
+} else {
+  $(".hideme").css("opacity", 1);
+}
+    
+
+    $(document).ready(function () {
+  
+$(".navbar-nav li a").not(".dropdown-toggle").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
     
 });
