@@ -160,6 +160,7 @@ hr {
     /*box-shadow: 0 6px 12px rgba(0,0,0,.175);*/
     float: left;
     max-width: 300px;
+    /*max-height: 225px;*/
 }
 
 /*=====================Red navigation squares*/
@@ -213,10 +214,20 @@ hr {
 	margin-bottom: 70px;
 }
 .btn-lg {
-	width: 130px;
+	width: auto;
 	margin: 0px;
 	display: inline;
 	float: left
+}
+/*.email {
+	float: left;
+	margin-left: auto;
+	padding: 15px;
+	padding-bottom: 15px;
+}*/
+.email:hover {
+	background-color:  #910002;
+	color: white;
 }
 .facebook:hover {
 	background-color: #3b5998;
