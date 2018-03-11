@@ -65,9 +65,9 @@ if ( $(window).width() > 768) {
 
 $(".dropdown").hover(function(){
   console.log("hovered");
-  $(this).toggleClass("open")
+  $(this).addClass("open")
   }, function(){
-    $(this).toggleClass("open");
+    $(this).removeClass("open");
   });
 
     

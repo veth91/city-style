@@ -58,8 +58,11 @@ p {
 	padding: 5px;
 	}
 }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: rgba(0, 0, 0, 0);
+}
 .navbar-default .navbar-toggle {
-	background-color: rgba(145, 0, 2, .95); 
+	background-color: none; 
 	color: white;
 }
 .icon-bar {
@@ -71,14 +74,17 @@ p {
  	padding: 40px 80px 10px 80px;
 }
 .navbar-default .navbar-nav>.active>a {
-	background-color: rgba(145, 0, 2, .8);
-	color: white;
+	color: rgba(145, 0, 2, .9);
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-	background-color: rgba(145, 0, 2, .6);
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus {
 	border-radius: 0.1em;
-	color: white;
+	color: rgba(145, 0, 2, .9);
 	transition: 0.2s ease-in 0.05s;
+}
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>.open>a:hover {
+	border-radius: 0.1em;
+	color: rgba(145, 0, 2, .9);
+	transition: 0.1s ease-in 0.05s;
 }
 
 /*======================================= logo*/
