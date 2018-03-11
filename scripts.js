@@ -59,10 +59,16 @@ if ( $(window).width() > 768) {
   $(".hideme").css("opacity", 1);
 }
 
-$(document).ready(function() {
-  $(".navbar-nav li a").not(".dropdown-toggle").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
+
+
+
+
+$(".dropdown").hover(function(){
+  console.log("hovered");
+  $(this).toggleClass("open")
+  }, function(){
+    $(this).toggleClass("open");
   });
-});
+
     
 });
